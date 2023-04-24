@@ -1,0 +1,114 @@
+@charset "UTF-8";
+input[type=text] {left: 400px;}
+.name input, .nickname input, .mail input, .velue input,
+ .id input, .pw input, .id input, .pwck input,.sName input,.sRegnum input, .sIntro textarea, .email2 select{
+  border: 0;
+  height: auto;
+
+  border-radius: 15px;
+  box-shadow: 0 0 0 1px #8a96dc;
+  text-align: left; 
+  }
+  	.width_80{
+		width:80px;
+	}
+	.width_350{
+		width:350px;
+	}	
+	
+	
+input[type=password] {position: inherit;left: 400px;}
+
+#btnChkId {position: inherit;left: 568px;}
+#btnChkNickname {position: inherit;left: 568px;}
+
+
+input#zipcode {padding: 5px;border-radius: 10px;position: inherit;height: 22px;
+    width: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 0 1px #8a96dc;
+    text-align: left;}
+
+
+fieldset div:nth-child(3) input[type=text] {}
+
+input#name {position:inherit;left: 430px;}
+.velue {}
+
+.velue label { width:100px; line-height: 29px;
+vertical-align: top;}
+
+
+.zip {height: 100px;}
+
+input#zipcode {padding: 5px;}
+
+
+.zip {letter-spacing: 6px;line-height: 23px;}
+
+.velue {     vertical-align:middle;}
+
+.velue {display: inline-block;}
+
+input#name {display: inline-block;}
+
+input#nickname {display: inline-block;}
+
+span {display: inline-block;}
+
+input.width_350 {padding: 5px;
+    border-radius: 10px;
+    position: inherit;
+    height: 22px;
+    
+    border-radius: 15px;
+    box-shadow: 0 0 0 1px #8a96dc;
+    text-align: left;margin: 3px;}
+.name span {margin-left: 61px;}
+
+.pw span {margin-left: 63px;}
+
+.pwck span {margin-left: 6px;}
+
+input.width_350 {margin-left: 5px;}
+
+.zip {}
+
+input#email1 {margin-left: 57px;}
+
+input#pwd2 {margin-left: -19px;}
+
+input#pwd {margin-left: -18px;}
+
+input#id {margin-left: -19px;}
+
+.id span {}
+
+input#nickname {margin-left: -17px;}
+
+input#name {margin-right: 19px;}
+input#zipcode {margin-left: -76px;}
+input[type=button] {background: #53638d;color: white;}
+input#btnZipcode {border: 1px solid #8a96dc;border-radius: 16px;}
+
+
+input#sName {margin-left: -208px;}
+
+input#sRegnum {margin-left: -208px;}
+
+.sIntro {}
+
+textarea#sIntro {resize: none;margin-left: 52px;margin-top: 4px;}
+
+fieldset span {color: red;font-weight: bold;}
+
+.h2, h2 {
+    font-weight: bold;
+}
+
+
+
+
+
+
+

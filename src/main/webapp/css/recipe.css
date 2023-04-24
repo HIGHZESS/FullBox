@@ -1,0 +1,433 @@
+@charset "UTF-8";
+*{
+	font-family: 'Gowun Dodum', sans-serif;
+}
+a{
+	text-decoration: none;
+		
+}
+#recipe_slide{
+	height:300px;
+	overflow: hidden; 
+}
+
+.r_container{
+	width: 20000px;
+	height: 300px;
+	transition: transform 0.5s;
+}
+
+.r_inner{
+	height: 300px;
+	float: left;
+}
+
+.r_inner img{
+	height: 300px;
+}
+
+/* 버튼 디자인 */
+.button{
+	min-width: 20px;
+	height: 35px;
+	background: #efefef;
+	display: inline-block;
+	padding: 6px 14px;
+	border-radius: 7px;
+}
+
+#recipe_deteil_buttonDiv{
+	text-align: right;
+}
+
+#recipe_deteil_buttonDiv_rec{
+	text-align: right;
+}
+
+
+
+#recipe_rec_slide{
+	height:300px;
+	overflow: hidden;
+	border-right: 1px solid #bcbcbc;
+}
+
+#recipe_rec_container{
+	width: 20000px;
+	height: 300px;
+	transition: transform 1s;
+	
+}
+
+.recipe_header{
+	width: 910px;
+	height: 300px;
+	float: left;
+}
+#recipe_rec_img{
+	display: inline-block;
+	width: 30%;
+	height: 300px;
+	overflow: hidden;
+	
+}
+#recipe_rec_img img{
+	margin: auto;
+	width: auto;
+	height: 300px;
+}
+#recipe_rec_info{
+	width: 60%;
+	height: 250px;
+	float: right;
+	margin-right: 25px;
+	overflow: hidden;
+}
+
+#recipe_rec_info p{
+	display: inline;
+	float: left;
+	margin-left: 15px;
+}
+
+#recipe_rec_info span{
+	text-align: center;
+}
+
+#recipe_header h1{
+	font-family: 'Gowun Dodum', sans-serif;
+	text-align: right;
+	font-size: 2.5em;
+}
+
+.recipe_board_inner{
+	width: 910px;
+	height: 150px;
+	border-bottom: 1px solid #bcbcbc;
+	overflow: hidden;
+}
+.recipe_board_imgbox{
+	width: 150px;
+	height: 150px;
+	float:left;
+	text-align: center;
+}
+.recipe_board_div{
+	clear: both;
+	position: relative;
+	top: 25px;
+	left: 25px;
+/* 	background: skyblue; */
+	width: 100px;
+	height: 100px;
+}
+
+.recipe_board_img{
+	clear: both;
+	position: relative;
+	width: 100px;
+	height: 100px;
+}
+
+.recipe_board_content_a{
+	width: 600px;
+	height: 150px;
+	float: left;	
+}
+
+.recipe_board_contentbox{
+	height: 600px;
+	float:right;
+	text-align: center;
+}
+
+.recipe_board_pointbox{
+	border-radius: 6px;
+	width: 80px;
+	height: 100px;
+	float: right;
+	margin: 10px 10px 0 0;
+	background: #6ca17c;
+}
+
+.recipe_board_regdate{
+	display: inline-block;
+	width: 120px;
+	height: 30px;
+	margin: 6px -49px 0 0;
+}
+
+.noCount{
+	padding: 15px 0;
+	height: 100px;
+	color: #ebebeb;
+}
+
+.count{
+	padding: 15px 0;
+	height: 100px;
+	color: #ebebeb;
+	font-size: 2.8em;
+}
+
+.recipe_board_title{
+	font-weight: bold;
+	width: 600px;
+	clear: both;
+	position: relative;
+	top: 25px;
+	left: 25px;
+	height: 25px;
+}
+.recipe_board_content{
+	width: 600px;
+	clear: both;
+	position: relative;
+	top: 25px;
+	left: 25px;
+	height: 100px;
+}
+#recipe_frm{
+	width:400px;
+	display: inline-block;
+	margin-left: 130px;
+}
+
+#recepe_write{
+	display: inline-block;
+	float: right;
+}
+
+#currentPageNo{ /* 페이징처리 */
+	font-size: 1.4em;
+	font-weight: bold;
+	color: green;
+}
+/* 글작성(write) 및 수정(edit) 부분 css */
+#recipe_write_title{
+	width: 910px;
+	color: gray;
+}
+
+#recipe_write_ta{
+	width: 910px;
+	min-height: 500px;
+	color: gray;
+}
+
+#fileName{
+	float: left;
+}
+
+#recipe_write_subBt{
+	text-align: right;
+}
+
+.sp1{
+	display: block;
+	float:left;
+}
+
+/* 별점부분 css */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:500,100,300,700,400);
+.cont{
+  margin: 0;
+  padding: 0;
+  font-family: roboto;
+}
+
+
+.cont{
+  width: 910px;
+  height: 75px;
+  text-align: center;
+  margin: 10px auto auto;
+  background: #2f593c;
+  color: #EEE;
+  border-radius: 5px;
+  border: thin solid #444;
+  overflow: hidden;
+}
+.contStar{
+  margin: 0;
+  padding: 0;
+  font-family: roboto;
+}
+
+
+.contStar{
+  width: 400px;
+  height: 75px;
+  text-align: center;
+  margin: 10px auto auto;
+  background: #2f593c;
+  color: #EEE;
+  border-radius: 5px;
+  border: thin solid #444;
+  overflow: hidden;
+}
+
+hr{
+  margin: 20px;
+  border: none;
+  border-bottom: thin solid rgba(255,255,255,.1);
+}
+
+div.title{
+  font-size: 1.4em;
+  height: 74px;
+  display: inline-block;
+  padding-top: 20px;
+  padding-left: 30px;
+  float: left;
+}
+div.contTitle{
+	text-align:center;
+  font-size: 1.4em;
+  height: 74px;
+  display: inline-block;
+  padding-right: 20px;
+}
+
+div.title p{
+  font-family: 'Gowun Dodum', sans-serif;
+}
+
+h1 span{
+  font-size: 12px;
+  font-weight: 300;
+  color: #Fd4;
+}
+
+div.stars{
+  width: 310px;
+  display: inline-block;
+  float: right;
+}
+
+input.star{
+  display: none;
+}
+
+label.star {
+  float: right;
+  padding: 10px;
+  font-size: 36px;
+  color: #648f64;
+  transition: all .2s;
+}
+
+input.star:checked ~ label.star:before {
+  content:'\f005';
+  color: #FD4;
+  transition: all .25s;
+}
+
+
+input.star-5:checked ~ label.star:before {
+  color:#FE7;
+  text-shadow: 0 0 20px #952;
+}
+
+input.star-1:checked ~ label.star:before {
+  color: #F62;
+}
+
+label.star:hover{
+  transform: rotate(-15deg) scale(1.3);
+}
+
+label.star:before{
+  content:'\f006';
+  font-family: FontAwesome;
+}
+
+.rev-box{
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+  transition: all .25s;
+}
+
+textarea.review{
+  background: #222;
+  border: none;
+  width: 100%;
+  max-width: 100%;
+  height: 100px;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #EEE;
+}
+
+label.review{
+  display: block;
+  transition:opacity .25s;
+}
+
+
+
+input.star:checked ~ .rev-box{
+  height: 125px;
+  overflow: visible;
+}
+
+
+/* 레시피 디테일 부분 */
+
+#recipe_top{
+	width: 910px;
+	min-height: 300px;
+	text-align: center;
+
+}
+#recipe_top_info{
+	height: 80px;
+	margin: 0 auto;
+	padding: 0 10px;
+	
+}
+.image{
+	width: auto;
+}
+
+#recipe_top_view{
+	width: 50px;
+	height: 80px;
+	display: inline-block;
+	float: left;
+}
+
+#recipe_top_id{
+	display: inline-block;
+	
+	
+}
+
+#recipe_top_image img{
+	max-width: 900px;	
+	min-width: 300px;
+	
+	
+}
+
+#recipe_top_star{
+	width: 50px;
+	height: 80px;
+	display: inline-block;
+	float: right;
+}
+
+#recipe_detail_title span{
+	font-size: 2em;
+	font-weight: bold;
+	width: 900px;
+	
+}
+#recipe_detail_content{
+	width: 900px;
+	min-height: 300px;
+	text-align: left;
+}
+

@@ -1,0 +1,125 @@
+@charset "UTF-8";
+.raise:hover, .raise:focus {
+	box-shadow: 0 0.5em 0.5em -0.4em var(- -hover);
+	transform: translateY(-0.25em);
+}
+
+button {
+	background: none;
+	border: 2px solid;
+	font: inherit;
+	line-height: 1;
+	margin: 0.5em;
+	padding: 1em 2em;
+}
+
+button.raise {
+	border-radius: 20px;
+	border-color: #1d451e;
+color: black;font-weight: bold;}
+
+.InfoContents {
+	width: 338px;
+	height: 277px;
+	margin: auto;
+	line-height: 42px;
+	text-align: left;
+}
+
+span#mName {
+	margin-left: 42px;
+}
+
+h3 {font-weight: bold;margin-bottom: 21px;color: #0e4f18;}
+
+span#mNickname {
+	margin-left: 30px;
+}
+
+span#mMail {
+	margin-left: 30px;
+}
+
+span#mType {
+	margin-left: 15px;
+}
+
+span#mAddress {
+	margin: 24px;
+}
+
+.InfoContents {
+	height: 326px;
+	width: 552px;
+}
+
+.Info {
+	height: 382px;
+}
+
+div#InfoText {
+	margin-left: 48px;
+	margin-top: 37px;
+}
+
+.InfoContents {
+	border: 1px solid black;
+	border-radius: 45px;
+}
+
+.InfoContents {
+	margin-top: -1px;
+}
+
+@import
+	url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+
+$
+base-spacing-unit: 24px ;
+ $half-spacing-unit: $base-spacing-unit / 2 ;
+
+ $color-alpha: #1772FF ;
+ $color-form-highlight: #EEEEEE ;
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+body {
+	padding: $base-spacing-unit;
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+.container {
+	max-width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+
+
+.BuyList {margin-top: 80px;margin-bottom: 80px;}
+.InfoContents {border-width: 2px;border-color: #094811;}
+
+
+a#name {color: white;font-weight: bold;}
+
+.plant {width: 34px;}
+
+h3 {margin-bottom: 19px;}
+
+
+.wrapper .Info .InfoContents label {font-weight: bold;color: #164b1a;}
+
+.InfoContents {background: #0080000a;}
+
+thead.table-header {background: #094a09;color: white;}

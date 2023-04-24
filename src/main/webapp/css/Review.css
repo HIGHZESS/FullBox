@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+p#contentArea {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	word-break: normal;
+	line-height: 1.2em;
+}
+
+.reviewbox td:nth-child(2) div:nth-child(1) {
+	margin: 20px;
+	text-align: left;
+}
+
+img.reviewImg {
+	width: 153px;
+	height: 137px;
+	object-fit: cover;
+	border-radius: 20%;
+}
+
+.ReviewNav {
+	height: 75px;
+	padding: 1rem;
+	font-family: '';
+	font-weight: bold;
+	background: #d1eacf91;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 35px;
+	margin-top: 0;
+}
+
+.detailImg img {
+	width: 500px;
+	object-fit: cover;
+}
+
+#forHover h5 {
+	font-weight: bold;
+}
+
+div#pdiv {}
+
+div#pdiv {}
+
+.reviewInfo {padding-left: 0px;}
+
+div#pdiv {padding-left: 28px;padding-right: 7px;padding-bottom: 2px;}

@@ -1,0 +1,198 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var currentPosition = parseInt($("#slideMenu").css("top")); 
+		$(window).scroll(function() { 
+			var position = $(window).scrollTop(); 
+			$("#slideMenu").stop().animate({"top":position+currentPosition+"px"},300); });
+
+	});
+</script>
+<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/clear.css" />
+<style type="text/css">
+/* 전체틀을 감싸는 main div */
+#main {
+	height: 2000px;
+	text-align: center;
+}
+
+/* a태그 링크 */
+a {
+	text-decoration: none;
+}
+
+a:link {
+	color: black;
+}
+
+a:visited {
+	color: black;
+}
+
+/* header => nav (위쪽부분) */
+#nav {
+	position: fixed;
+	z-index: 5;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 80px;
+	background: white;
+}
+
+#foolbox {
+	display: inline-block;
+	margin-bottom: 15px;
+}
+
+#mainMenu {
+	list-style: none;
+	display: inline-block;
+}
+
+#mainMenu li {
+	float: left;
+	margin: 12px 24px;
+}
+
+#mainMenuDiv {
+	display: inline-block;
+	border: 0;
+	top: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* section을 감싸는 중앙 전체 div */
+#body {
+	padding-top: 70px;
+	width: 100%;
+	height: 100%;
+}
+
+/* section 각각의 div */
+.body {
+	height: 100%;
+	float: left;
+}
+
+/* section중 왼쪽부분 */
+#bodyLeft {
+	width: 15%;
+	margin-right: 40px;
+	border-right: 1px solid #efefef;
+}
+
+#bodyLeftMenu {
+	position: fixed;
+	top: 170px;
+	left: 100px;
+}
+
+#bodyLeftMenu ul li {
+	margin: 20px 0;
+}
+
+/* section중 중앙부분 */
+#bodyCenter {
+	text-align: center;
+	width: 65%;
+	margin-right: 35px;
+}
+
+/* section중 우측부분 */
+#bodyRight {
+	width: 15%;
+	border-left: 1px solid #efefef;
+}
+#slideMenu{
+	position: absolute;
+	margin-left: 50px;
+	margin-top: 400px;
+}
+#slideMenu li{
+	border-collapse: collapse;
+	border: 1px solid #cdcdcd;
+	width: 100px;
+	height: 30px;
+	background: white;
+
+	
+}
+
+/* footer 아랫부분 */
+#footer {
+	background: #282828;
+	width: 100%;
+	height: 300px;
+	color: white;
+	text-align: center;
+}
+</style>
+</head>
+<body>
+	<div id="main">
+		<div id="header"></div>
+		<div id="nav">
+			<div id="mainMenuDiv">
+				<img src="../image/바보상자.png" id="foolbox">
+				<ul id="mainMenu">
+					<li><a href="#">미션</a></li>
+					<li><a href="#">이용방법</a></li>
+					<li><a href="#">상품목록</a></li>
+					<li><a href="#">이용후기</a></li>
+					<li><a href="#">문의하기</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="body">
+			<div id="bodyLeft" class="body">
+				<div id="bodyLeftMenu">
+					<ul>
+						<li>테스트</li>
+						<li>상품</li>
+						<li>묶음 상품</li>
+						<li>전체</li>
+						<li>과일</li>
+						<li>체소</li>
+					</ul>
+				</div>
+
+			</div>
+			<div id="bodyCenter" class="body">
+				<section id="sectionCenter">
+				
+
+
+
+
+
+				</section>
+			</div>
+			<div id="bodyRight" class="body">
+				<div id="slideMenu">
+					<ul>
+						<img src="../image/slideIcon.png">
+						<li>맨 위로</li>
+						<li>문의하기</li>
+						<li>후기</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<p>예제용 텍스트</p>
+		</div>
+
+
+	</div>
+</body>
+</html>

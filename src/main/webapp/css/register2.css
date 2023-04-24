@@ -1,0 +1,21 @@
+@charset "UTF-8";
+fieldset#registerF div {margin: 21px;}
+
+fieldset label {float: left;}
+
+.divForm {padding-left: 141px;}
+
+input#name {margin-left: 13px;}
+
+input#pwd {margin-left: -30px;}
+
+input#pwd2 {margin-left: -61px;}
+
+
+input#email1 {margin-left: 88px;}
+
+.OnlyForSeller {border: 1px solid navy;}
+
+input#sRegnum {margin-left: -265px;}
+
+textarea#sIntro {width: 300px;margin-left: -87px;}

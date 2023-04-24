@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/* section을 감싸는 중앙 전체 div */
+#center{
+	position: relative;
+	width: 100%;
+}
+#body {
+	padding-top: 100px;
+	margin: 0 auto;
+	width: 1400px;
+	height: 100%;
+}
+
+/* section 각각의 div */
+.body {
+	height: 100%;
+	float: left;
+}
+
+/* section중 왼쪽부분 */
+#bodyLeft {
+	width: 15%;
+	margin-right: 40px;
+	float: left;
+	border-right: 1px solid #efefef;
+}
+
+#bodyLeftMenu {
+	top: 170px;
+	left: 610px;
+}
+
+#bodyLeftMenu ul li {
+	margin: 20px 0;
+}
+
+/* section중 중앙부분 */
+#bodyCenter {
+	text-align: center;
+	width: 910px;
+	min-height: 500px;
+	float: left;
+}
+
+      #carouselExampleIndicators{
+      	margin: 0 auto;
+      	width: 400px;
+      	height: 400px;
+      }
+      .carousel-inner{
+        width:auto;
+        height:400px; /* 이미지 높이 변경 */
+      }
+      .carousel-item{
+        width: auto;
+        height:100%;
+      }
+      .d-block {
+        display:block;
+        width: auto;
+        height: 100%;
+      }
+      
+
+
+
+
+/* section중 우측부분 */
+#bodyRight {
+	width: 15%;
+	border-left: 1px solid #efefef;
+	float: right;
+		
+}
+#slideMenu{
+	position: absolute;
+	margin-left: 50px;
+	margin-top: 400px;
+}
+#slideMenu li{
+	border-collapse: collapse;
+	border: 1px solid #cdcdcd;
+	width: 100px;
+	height: 30px;
+	background: white;
+
+	
+}

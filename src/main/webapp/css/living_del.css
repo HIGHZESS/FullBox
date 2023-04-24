@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+body {
+	padding: 5px;
+	margin: 5px;
+}
+
+.divForm {
+	width: 900px;
+	border: 1px solid #ddd;
+	text-align: center;
+	margin: 0px auto;
+}
+/* .divForm form{
+		width:650px;
+	} */
+.divForm div {
+	/* clear: both; */
+	border: none;
+	padding: 7px 0;
+	margin: 0;
+	overflow: auto;
+}
+
+.sp {
+	font-size: 0.9em;
+	color: #0056AC;
+}
+
+.divForm fieldset {
+	border: 0;
+}
